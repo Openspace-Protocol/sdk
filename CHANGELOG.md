@@ -1,5 +1,13 @@
 # @openspace-protocol/sdk
 
+## 0.0.5
+
+### Patch Changes
+
+- 6043f37: added points component
+- 6043f37: added points component
+- 6043f37: added points component
+
 ## 0.0.4
 
 ### Patch Changes
