@@ -1,8 +1,8 @@
 {
-	"name": "sdk",
-	"version": "0.0.0",
+	"name": "@openspace-protocol/sdk",
+	"version": "0.0.2",
 	"private": true,
-	"description": "",
+	"description": "Openspace Protocol SDK",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com:Openspace-Protocol/sdk.git"
@@ -17,6 +17,13 @@
 	"types": "dist/esm/index.d.ts",
 	"files": [
 		"dist"
+	],
+	"keywords": [
+		"npm",
+		"typescript",
+		"sdk",
+		"web3",
+		"ethereum"
 	],
 	"scripts": {
 		"build": "NODE_ENV=production rollup -c",
@@ -39,6 +46,12 @@
 			"prettier --write"
 		]
 	},
+	"author": "OpenSpace Protocol",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/openspace-protocol/sdk/issues"
+	},
+	"homepage": "https://github.com/openspace-protocol/sdk#readme",
 	"browserslist": [
 		"> 1%",
 		"not dead",
