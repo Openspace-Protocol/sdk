@@ -1,7 +1,7 @@
 {
 	"name": "@openspace-protocol/sdk",
 	"version": "0.0.2",
-	"private": true,
+	"private": false,
 	"description": "Openspace Protocol SDK",
 	"repository": {
 		"type": "git",
