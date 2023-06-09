@@ -1,6 +1,6 @@
 {
 	"name": "@openspace-protocol/sdk",
-	"version": "0.0.3",
+	"version": "0.0.0",
 	"private": false,
 	"description": "Openspace Protocol SDK",
 	"repository": {
@@ -60,7 +60,8 @@
 		"not op_mini all"
 	],
 	"dependencies": {
-		"@babel/runtime": "^7.20.7"
+		"@babel/runtime": "^7.20.7",
+		"axios": "^1.4.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
