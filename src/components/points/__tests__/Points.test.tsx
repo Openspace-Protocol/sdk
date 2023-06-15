@@ -7,6 +7,7 @@ describe('Button', () => {
 		render(
 			<Points
 				address={'0x1Ff664da51CeD0bb8356C6737815e2B970D6b9B8' as `0x${string}`}
+				onClick={handleClick}
 			>
 				Submit
 			</Points>,
