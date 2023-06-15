@@ -21,6 +21,11 @@ export interface PointsProps
 	 * @default 'solid'
 	 */
 	variant?: Variant1;
+	/**
+	 * The address of the user.
+	 *
+	 * */
+	address: `0x${string}`;
 }
 
 export const Points = forwardRef<HTMLButtonElement, PointsProps>(
@@ -32,11 +37,12 @@ export const Points = forwardRef<HTMLButtonElement, PointsProps>(
 			color = 'primary',
 			variant = 'solid',
 			children,
+			address,
 			...rest
 		},
 		ref,
 	) => {
-		const { data, error, loaded } = useGetPoints();
+		const { data, error, loaded } = useGetPoints(address);
 		if (error)
 			return (
 				<Sc.Points
