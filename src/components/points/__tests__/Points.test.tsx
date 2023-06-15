@@ -4,7 +4,13 @@ import { Points } from '../index';
 
 describe('Button', () => {
 	test('Should render Button correctly', () => {
-		render(<Points>Submit</Points>);
+		render(
+			<Points
+				address={'0x1Ff664da51CeD0bb8356C6737815e2B970D6b9B8' as `0x${string}`}
+			>
+				Submit
+			</Points>,
+		);
 		expect(screen.getByRole('button')).toBeInTheDocument();
 		expect(screen.getByRole('button')).toHaveTextContent('Submit');
 	});
@@ -12,7 +18,14 @@ describe('Button', () => {
 	test('Should be clickable', async () => {
 		const user = userEvent.setup();
 		const handleClick = jest.fn();
-		render(<Points onClick={handleClick}>Click me</Points>);
+		render(
+			<Points
+				address={'0x1Ff664da51CeD0bb8356C6737815e2B970D6b9B8' as `0x${string}`}
+				onClick={handleClick}
+			>
+				Click me
+			</Points>,
+		);
 		const button = screen.getByRole('button');
 		await user.click(button);
 		expect(handleClick).toHaveBeenCalled();
@@ -21,7 +34,11 @@ describe('Button', () => {
 	test('Should not be clickable when disabled', () => {
 		const handleClick = jest.fn();
 		render(
-			<Points onClick={handleClick} disabled>
+			<Points
+				address={'0x1Ff664da51CeD0bb8356C6737815e2B970D6b9B8' as `0x${string}`}
+				onClick={handleClick}
+				disabled
+			>
 				Click me
 			</Points>,
 		);
@@ -30,7 +47,14 @@ describe('Button', () => {
 	});
 
 	test('Should pass aria-pressed to the inner button', () => {
-		render(<Points aria-pressed="true">Action</Points>);
+		render(
+			<Points
+				address={'0x1Ff664da51CeD0bb8356C6737815e2B970D6b9B8' as `0x${string}`}
+				aria-pressed="true"
+			>
+				Action
+			</Points>,
+		);
 		expect(screen.getByRole('button', { pressed: true })).toBeInTheDocument();
 	});
 });
