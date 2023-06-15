@@ -1,5 +1,17 @@
 # @openspace-protocol/sdk
 
+## 0.1.0
+
+### Minor Changes
+
+- 0ef8b6d: got points working
+
+### Patch Changes
+
+- 0ef8b6d: added points component
+- 0ef8b6d: added points component
+- 0ef8b6d: added points component
+
 ## 0.0.5
 
 ### Patch Changes
